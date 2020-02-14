@@ -11,32 +11,32 @@ Build a neural-network based image classifier that can distinguish a cat from a 
 "Dogs vs. Cats" dataset from Kaggle, subsampled by Google to 2000 training images and 1000 test/validation images, with an equal distribution of cats and dogs annotation. [https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip](https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip). 
 
 ### Abstract
-
+Image classification of cats and dogs are not as trivial for machines, unlike for humans. Here we present a classifier that is based on neural network composed of multiple convolutional layers of increasing kernel size. Our model was trained on a small dataset of 2000 images of equal distribution of annotations, with image augmentations. Multiple rounds of trainings were conducted, and the model achieved training and validation accuracy of **nn% and mm%**, respectively, with training and validation AUC of **yy and zz**, respectively. We tested our model using several images obtained from an online search platform, and misclassification may be contributed by the minor overfitting of the model.
 
 ### Solution
-* A neural-network with multiple convolutional layers of increasing kernel size was constructed with 10% dropout post-convolutional 2D max pooling.  
+* A sequential neural-network with multiple convolutional layers of increasing kernel size was constructed with 10% dropout post-convolutional 2D max pooling.  
 * Training images were augmented to include rotational shift, zooming, x- and y-axes shifts, and horizontal flipping. Test/validation images were not augmented.  
 * Training was conducted on Google Colab platform with GPU hardware accelerator.
 
 ### Model Architecture: Sequential
-1. 1xConv layer of 32 channel of 3x3 kernel and same padding.  
-2. 1xMaxpool layer with 2x2 pool size and 2x2 stride.
-3. 1xDropout layer with fraction of 0.1.
-4. 1xConv layer of 64 channel of 3x3 kernel and same padding.  
-5. 1xMaxpool layer with 2x2 pool size and 2x2 stride.
-6. 1xDropout layer with fraction of 0.1.
-7. 1xConv layer of 128 channel of 3x3 kernel and same padding.
-8. 1xMaxpool layer with 2x2 pool size and 2x2 stride.
-9. 1xDropout layer with fraction of 0.1.
-7. 1xConv layer of 256 channel of 3x3 kernel and same padding.
-8. 1xMaxpool layer with 2x2 pool size and 2x2 stride.
-9. 1xDropout layer with fraction of 0.1.
-10. 1xConv layer of 512 channel of 3x3 kernel and same padding.
-11. 1xMaxpool layer with 2x2 pool size and 2x2 stride.
-12. 1xDropout layer with fraction of 0.1.
-13. 1xFlattening layer.
-14. 1xDense layer with 2048 units.
-15. 1xDense sigmoid layer with 1 units.
+1. 1x Conv layer of 32 channel of 3x3 kernel and same padding.  
+2. 1x Maxpool layer with 2x2 pool size and 2x2 stride.
+3. 1x Dropout layer with fraction of 0.1.
+4. 1x Conv layer of 64 channel of 3x3 kernel and same padding.  
+5. 1x Maxpool layer with 2x2 pool size and 2x2 stride.
+6. 1x Dropout layer with fraction of 0.1.
+7. 1x Conv layer of 128 channel of 3x3 kernel and same padding.
+8. 1x Maxpool layer with 2x2 pool size and 2x2 stride.
+9. 1x Dropout layer with fraction of 0.1.
+7. 1x Conv layer of 256 channel of 3x3 kernel and same padding.
+8. 1x Maxpool layer with 2x2 pool size and 2x2 stride.
+9. 1x Dropout layer with fraction of 0.1.
+10. 1x Conv layer of 512 channel of 3x3 kernel and same padding.
+11. 1x Maxpool layer with 2x2 pool size and 2x2 stride.
+12. 1x Dropout layer with fraction of 0.1.
+13. 1x Flattening layer.
+14. 1x Dense layer with 2048 units.
+15. 1x Dense sigmoid layer with 1 unit.
 
 ### Training Summary and Statistics of Model 
 * Epochs = 75, actual 55
