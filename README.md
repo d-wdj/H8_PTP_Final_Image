@@ -4,14 +4,16 @@ Batch 2 > 2019.11 - 2020.02
 ### Final Project 
 Classification of images of cats vs dogs using deep neural network.
 
+### Abstract
+Image classification of cats and dogs are not as trivial for machines, unlike for humans. Here we present a classifier that is based on neural network composed of multiple convolutional layers of increasing kernel size. Our model was trained on a small dataset of 2000 images of equal annotation distribution, with image augmentations during training. Multiple rounds of trainings were conducted, and the best trained model achieved training and validation accuracy of **nn% and mm%**, and training and validation AUC of **yy and zz**, respectively. We tested our model using several images obtained from an online search platform, and we attribute any misclassification to the slight overfitting of the model.
+
+---
+
 ### Objective
 Build a neural-network based image classifier that can distinguish a cat from a dog and vice-versa.
 
 ### Dataset
 "Dogs vs. Cats" dataset from Kaggle, subsampled by Google to 2000 training images and 1000 test/validation images, with an equal distribution of cats and dogs annotation. [https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip](https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip). 
-
-### Abstract
-Image classification of cats and dogs are not as trivial for machines, unlike for humans. Here we present a classifier that is based on neural network composed of multiple convolutional layers of increasing kernel size. Our model was trained on a small dataset of 2000 images of equal annotation distribution, with image augmentations during training. Multiple rounds of trainings were conducted, and the best trained model achieved training and validation accuracy of **nn% and mm%**, and training and validation AUC of **yy and zz**, respectively. We tested our model using several images obtained from an online search platform, and we attribute any misclassification to the slight overfitting of the model.
 
 ### Solution
 * A sequential neural-network with multiple convolutional layers of increasing kernel size was constructed with 10% dropout post-convolutional 2D max pooling.  
