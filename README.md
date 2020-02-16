@@ -49,10 +49,10 @@ Build a neural-network based image classifier that can distinguish a cat from a 
   * Min LR = 1e-5 
 
 ModelName = 20200216_0212  
-Metric  | Training  | Validation    | ∆
---- | :---: | :---: | :---: | 
-Accuracy | 86.80% | 83.30% | 3.50%
-AUC | 0.947 | 0.901 | 0.046
+Metric  | Training  | Validation | ∆  
+--- | :---: | :---: | :---: |   
+Accuracy | 86.80% | 83.30% | 3.50%  
+AUC | 0.947 | 0.901 | 0.046  
 
 #### Other Trained Models and Their Statistics
 Multiple models were trained, listed below are the ones with validation accuracy > 0.8.  
