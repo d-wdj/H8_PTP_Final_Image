@@ -48,7 +48,7 @@ Build a neural-network based image classifier that can distinguish a cat from a 
   * Factor = 2/3
   * Min LR = 1e-5 
 
-ModelName = 20200216_0212
+ModelName = 20200216_0212  
 Metric  | Training  | Validation    | ∆
 --- | :---: | :---: | :---: | 
 Accuracy | 86.80% | 83.30% | 3.50%
