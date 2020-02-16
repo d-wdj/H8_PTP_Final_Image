@@ -48,11 +48,11 @@ Build a neural-network based image classifier that can distinguish a cat from a 
   * Factor = 2/3
   * Min LR = 1e-5 
 
+ModelName = 20200216_0212
 Metric  | Training  | Validation    | ∆
 --- | :---: | :---: | :---: | 
 Accuracy | 86.80% | 83.30% | 3.50%
 AUC | 0.947 | 0.901 | 0.046
-ModelName = 20200216_0212
 
 #### Other Trained Models and Their Statistics
 Multiple models were trained, listed below are the ones with validation accuracy > 0.8.  
@@ -70,6 +70,7 @@ ModelName | valAccuracy  | ∆Accuracy (Train-Val) | valAUC
 ---
 ### Installation
 This model was developed with the following module versions. If you would like to have a go, please refer to the versions stated below.
+* ```python == 3.6``` on Google Colab
 * ```tensorflow == 2.1.0```
 * ```matplotlib == 3.1.3```
 * ```numpy == 1.17.5```
