@@ -55,7 +55,8 @@ AUC | 0.947 | 0.901 | 0.046
 ModelName = 20200216_0212
 
 #### Other Trained Models and Their Statistics
-Multiple models were trained, listed below are the ones with validation accuracy > 0.8.
+Multiple models were trained, listed below are the ones with validation accuracy > 0.8.  
+
 ModelName | valAccuracy  | ∆Accuracy (Train-Val) | valAUC  
 | --- | :---: | :---: | :---: |  
 20200214_1320 | 82.40% | 1.849% | 0.888  
